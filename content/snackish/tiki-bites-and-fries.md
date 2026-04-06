@@ -42,6 +42,27 @@ side_categories:
       - name: Tamarind
         type: Regular
         price: 0
+  - category_name: fries_upgrade_sweet_cassava
+    display_name: Upgrade fries (sweet potato or cassava)
+    config:
+      minimum: 0
+      maximum: 1
+    items:
+      - name: Sweet Potato Fries
+        type: Regular
+        price: 10
+      - name: Cassava Fries
+        type: Regular
+        price: 10
+  - category_name: fries_upgrade_wedges
+    display_name: Upgrade to wedges
+    config:
+      minimum: 0
+      maximum: 1
+    items:
+      - name: Seasoned Wedges
+        type: Regular
+        price: 8
 ---
 
 Tiki bites with fries.

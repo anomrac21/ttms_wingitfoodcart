@@ -45,6 +45,15 @@ side_categories:
       - name: Tamarind
         type: Regular
         price: 0
+  - category_name: extra_sauce
+    display_name: Extra signature sauce
+    config:
+      minimum: 0
+      maximum: 1
+    items:
+      - name: Extra signature sauce
+        type: Premium
+        price: 5
 ---
 
 Any two flavours.
