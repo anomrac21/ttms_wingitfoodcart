@@ -1,8 +1,10 @@
 {
-    "name": "{{SITE_TITLE}}",
-    "short_name": "{{SITE_TITLE}}",
-    "description": "{{SITE_TITLE}} Digital Menu",
-    "start_url": ".",
+    "name": "Wing it Food Cart",
+    "short_name": "Wing it Food Cart",
+    "description": "Wing it Food Cart — digital menu",
+    "start_url": "/",
+    "scope": "/",
+    "id": "/",
     "background_color": "#000000",
     "display": "standalone",
     "theme_color": "#000000",
@@ -40,7 +42,8 @@
         {
             "src": "branding/favicon192.webp",
             "type": "image/webp",
-            "sizes": "192x192"
+            "sizes": "192x192",
+            "purpose": "any"
         },
         {
             "src": "branding/favicon196.webp",
@@ -51,7 +54,8 @@
         {
             "src": "branding/favicon512.webp",
             "type": "image/webp",
-            "sizes": "512x512"
+            "sizes": "512x512",
+            "purpose": "maskable"
         }
     ],
     "screenshots": [    

@@ -1,14 +1,10 @@
-# _headers file
-/*
-  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-# Allow all origins to access all index.json files
-/**/index.json
-  Access-Control-Allow-Origin: *.ttmenus.com
+/index.json
+  Access-Control-Allow-Origin: *
   Access-Control-Allow-Methods: GET
   Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
 
-# Allow all origins to access the menu items API endpoint
-/api/menu-items.json
-  Access-Control-Allow-Origin: *.ttmenus.com
+/advertisments/index.json
+  Cache-Control: public, max-age=300, stale-while-revalidate=600
+  Access-Control-Allow-Origin: *
   Access-Control-Allow-Methods: GET
   Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept

@@ -1,32 +1,117 @@
 :root {
-    --hero-bg-image-fg-color: #f4dec3;
-    --contact-info-bg: none;
-    --button-text-color2: #ffffff;
-    --main-bg-color: #f4dec3;
-    --menu-bg-color-1: #22273111;
-    --header-bordercolor-1: #dfeed4ff;
-    --modal-bg-container-color: #00000055;
-    --selected-button-color3: #fff;
-    --header-color: #000000ed;
-    --header-bg-color: #222731ee;
-    --selected-button-color4: #000000ee;
-    --button-color2: #000;
-    --header-bordercolor-2: #dfeed4ff;
-    --selected-text-color2: #fff;
-    --header-icon-color: #fefefe;
-    --menu-bg-color-2: #00000055;
-    --button-color1: #222731;
-    --selected-button-color2: #200;
-    --footer-text-color: #000;
-    --hero-text-color: #000;
+    /*HEADER*/
+    --header-color: var(--primary-orange);
+    --header-bordercolor-1: var(--text-inverse);
+    --header-bordercolor-2: var(--text-inverse);
+    --header-bg-color: var(--primary-orange);
+    --header-icon-color: var(--text-inverse);
     --header-bg-image: none;
-    --button-text-color3: #fff;
-    --selected-text-color3: #85181c;
-    --selected-button-color1: #200;
-    --button-text-color1: #fefefe;
-    --main-text-color: #ffffff;
-    --main-bg: #000;
-    --footer-bg-color: #fefefe;
-    --selected-text-color1: #fff;
-    --hero-bg-color: #000000;
+
+    /*HERO*/
+    --hero-bg-color: var(--neutral-charcoal-dark);
+    --hero-bg-image-fg-color: var(--primary-cream);
+    --hero-text-color: var(--text-inverse);
+    --contact-info-bg: none;
+
+    /*MAIN*/
+    --main-bg-color: var(--primary-cream);
+    --main-text-color: var(--text-inverse);
+    --main-bg: var(--neutral-charcoal-dark);
+
+    /*MENU*/
+    --menu-bg-color-1: rgba(255, 255, 255, 0);
+    --menu-bg-color-2: rgba(232, 189, 117, 0.33);
+
+    /*MENU  BUTTON*/
+    --button-color1: var(--primary-orange);
+    --button-color2: var(--accent-burgundy-dark);
+    --button-text-color1: var(--text-inverse);
+    --button-text-color2: var(--text-inverse);
+    --button-text-color3: var(--text-inverse);
+
+    /*MENU  SELECTED BUTTON*/
+    --selected-button-color1: var(--primary-orange);
+    --selected-button-color2: var(--primary-orange);
+    --selected-button-color3: var(--text-inverse);
+    --selected-button-color4: var(--neutral-charcoal-dark);
+    --selected-text-color1: var(--text-inverse);
+    --selected-text-color2: var(--text-inverse);
+    --selected-text-color3: var(--accent-burgundy);
+
+    /*FOOTER*/
+    --footer-bg-color: var(--text-inverse);
+    --footer-text-color: var(--text-dark);
+    --modal-bg-container-color: var(--overlay-medium);
+
+    /*ENHANCED COLOR PALETTE - Complementary & Harmonious */
+    
+    /* Primary Brand Colors - Enhanced */
+    --primary-orange: #a92700;
+    --primary-orange-light: #d6333f;
+    --primary-orange-dark: #8b1a00;
+    --primary-cream: #f4dec3;
+    --primary-cream-light: #f8e8d4;
+    --primary-cream-dark: #e8d4b8;
+    
+    /* Secondary Colors - Complementary */
+    --secondary-teal: #2d7d7d;
+    --secondary-teal-light: #4a9e9e;
+    --secondary-teal-dark: #1a5a5a;
+    --secondary-gold: #d4af37;
+    --secondary-gold-light: #e6c866;
+    --secondary-gold-dark: #b8941f;
+    
+    /* Accent Colors - Harmonious */
+    --accent-burgundy: #8b2635;
+    --accent-burgundy-light: #a63d4d;
+    --accent-burgundy-dark: #6d1e2a;
+    --accent-sage: #7a918d;
+    --accent-sage-light: #9db5b0;
+    --accent-sage-dark: #5d726e;
+    
+    /* Neutral Colors - Sophisticated */
+    --neutral-charcoal: #2c3e50;
+    --neutral-charcoal-light: #34495e;
+    --neutral-charcoal-dark: #1e2a38;
+    --neutral-warm-gray: #8b7355;
+    --neutral-warm-gray-light: #a08a6f;
+    --neutral-warm-gray-dark: #6d5a43;
+    
+    /* Status Colors - Functional */
+    --success-green: #27ae60;
+    --success-green-light: #2ecc71;
+    --success-green-dark: #1e8449;
+    --warning-orange: #f39c12;
+    --warning-orange-light: #f1c40f;
+    --warning-orange-dark: #d68910;
+    --error-red: #e74c3c;
+    --error-red-light: #ff6b6b;
+    --error-red-dark: #c0392b;
+    --info-blue: #3498db;
+    --info-blue-light: #5dade2;
+    --info-blue-dark: #2980b9;
+    
+    /* Interactive Colors - Enhanced UX */
+    --hover-orange: #d6333f;
+    --hover-cream: #f8e8d4;
+    --active-orange: #8b1a00;
+    --active-cream: #e8d4b8;
+    --focus-blue: #007bff;
+    --focus-blue-light: #4da6ff;
+    
+    /* Shadow & Overlay Colors */
+    --shadow-dark: rgba(0, 0, 0, 0.3);
+    --shadow-medium: rgba(0, 0, 0, 0.2);
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --overlay-dark: rgba(0, 0, 0, 0.7);
+    --overlay-medium: rgba(0, 0, 0, 0.5);
+    --overlay-light: rgba(0, 0, 0, 0.3);
+    
+    /* Text Colors - Enhanced Readability */
+    --text-primary: #2c3e50;
+    --text-secondary: #7a918d;
+    --text-muted: #95a5a6;
+    --text-light: #ecf0f1;
+    --text-dark: #2c3e50;
+    --text-inverse: #ffffff;
 }

@@ -1,5 +1,5 @@
-var number = '18682354664'; // Default number, will be updated by selectLocation function
-var name = 'OMG Sushi'
+var number = '';
+var name = 'Wing It'
 var messageStart = 'Powered by TTMenus\n'+name+'\nHello, Good Day\nI would like to order the following\n\nORDER\n';
 var messageBody = '';
 var messageEnd = '\nThank You!\nLooking forward to confirming this order';
@@ -559,55 +559,6 @@ function updateCart(i){
     }
 }
 
-// Function to handle location selection in cart
-function selectLocation(whatsappNumber) {
-    if (whatsappNumber) {
-        number = whatsappNumber;
-        console.log('Location selected, WhatsApp number updated to:', number);
-        
-        // Get the selected option to access additional data
-        const select = document.getElementById('locationSelect');
-        const selectedOption = select.options[select.selectedIndex];
-        
-        if (selectedOption) {
-            const address = selectedOption.getAttribute('data-address');
-            const lat = selectedOption.getAttribute('data-lat');
-            const lng = selectedOption.getAttribute('data-lng');
-            const orderingTables = selectedOption.getAttribute('data-orderingtables');
-            
-            console.log('Selected location:', {
-                address: address,
-                lat: lat,
-                lng: lng,
-                orderingTables: orderingTables,
-                whatsapp: whatsappNumber
-            });
-            
-            // Update any location-dependent UI elements here
-            // For example, you might want to update the order button text or other elements
-        }
-    } else {
-        console.log('No location selected');
-    }
-}
-
-// Function to initialize location selection
-function initializeLocationSelection() {
-    const locationSelect = document.getElementById('locationSelect');
-    if (locationSelect) {
-        // Set the first location as selected by default
-        if (locationSelect.options.length > 1) { // Skip the "Select a location" option
-            const firstLocationOption = locationSelect.options[1]; // Index 1 is the first actual location
-            if (firstLocationOption && firstLocationOption.value) {
-                selectLocation(firstLocationOption.value);
-            }
-        }
-        console.log('Location selection initialized');
-    } else {
-        console.log('Location select element not found');
-    }
-}
-
 function buildOrderText(){
 	messageBody='';
 	var itemSides='';
@@ -973,9 +924,6 @@ document.addEventListener("DOMContentLoaded", function() {
   requestAnimationFrame(() => { // Ensures DOM is ready before applying scroll
     loadCart();  // Load saved cart from localStorage
     updateCart(order.length);
-    
-    // Initialize location selection
-    initializeLocationSelection();
   });
 });
 

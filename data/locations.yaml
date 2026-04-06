@@ -1,52 +1,66 @@
 locations:
-  - address: "#75 Edinburgh Gardens,"
-    city: "Chaguanas, Trinidad and Tobago"
-    island: "Trinidad"
-    latlon: [10.499535,-61.408134]
-    phone: "8687060349"
-    whatsapp: "18687060349"
-    subcategories: []
-    orderingtables: []
-    delivery:
+  - address: Mucurapo Road, Port of Spain
+    city: Port of Spain
+    island: Trinidad
+    subcategories: 
+      - Food Truck
+    latlon: [10.666277876233893,-61.5305835949968]
+    phone: 18683494647
+    whatsapp: 18683494647
+    orderingtables: ["Takeway Only"]
+    pos:
+      loyverse:
+        enabled: true
+        provider: "loyverse"
+        store_id: "{{ env `LOYVERSE_STORE_ID_MUCURAPO` }}"
+        access_token: "{{ env `LOYVERSE_ACCESS_TOKEN_MUCURAPO` }}"
+        webhook_secret: "{{ env `LOYVERSE_WEBHOOK_SECRET` }}"
+        api_url: "{{ env `POS_API_URL` }}"
+        sync_menu: true
+        auto_process_orders: true
+        fallback_to_whatsapp: true
+      odoo:
+        enabled: true
+        provider: "odoo"
+        company_id: "{{ env `ODOO_COMPANY_ID_MUCURAPO` }}"
+        partner_id: "{{ env `ODOO_PARTNER_ID_MUCURAPO` }}"
+        pos_config_id: "{{ env `ODOO_POS_CONFIG_ID_MUCURAPO` }}"
+        user_id: "{{ env `ODOO_USER_ID_MUCURAPO` }}"
+        api_url: "{{ env `ODOO_API_URL_MUCURAPO` }}"
+        database: "{{ env `ODOO_DATABASE_MUCURAPO` }}"
+        sync_menu: true
+        auto_process_orders: true
+        fallback_to_whatsapp: true
     opening_hours:
-      mode: "Auto"
-      sun:
-        - type: "Open"
-          time: "11:00"
-        - type: "Close"
-          time: "22:00"
+      mode: Auto
+      sun: []
       mon:
-        - type: "Open"
-          time: "11:00"
-        - type: "Close"
-          time: "22:00"
+        - type: Open
+          time: "11:30"
+        - type: Close
+          time: "17:30"
       tue:
-        - type: "Open"
-          time: "11:00"
-        - type: "Close"
-          time: "22:00"
+        - type: Open
+          time: "11:30"
+        - type: Close
+          time: "17:30"
       wed:
-        - type: "Open"
-          time: "11:00"
-        - type: "Close"
-          time: "22:00"
+        - type: Open
+          time: "11:30"
+        - type: Close
+          time: "17:30"
       thu:
-        - type: "Open"
-          time: "11:00"
-        - type: "Close"
-          time: "22:00"
+        - type: Open
+          time: "11:30"
+        - type: Close
+          time: "17:30"
       fri:
-        - type: "Open"
-          time: "11:00"
-        - type: "Close"
-          time: "22:00"
-      sat:
-        - type: "Open"
-          time: "11:00"
-        - type: "Close"
-          time: "22:00"
-
-  - address: "#75 Edinburgh Gardens,"
+        - type: Open
+          time: "11:30"
+        - type: Close
+          time: "17:30"
+      sat: []
+  - address: Diamond Vale, Diego Martin
     city: "Chaguanas, Trinidad and Tobago"
     island: "Trinidad"
     latlon: [10.499691,-61.408338]

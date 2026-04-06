@@ -1,5 +1,7 @@
 theme = '_menus_ttms'
 languageCode = 'en-tt'
+title = 'Wing it Food Cart'
+baseURL = 'https://wingitfoodcart.ttmenus.com/'
 
 # Mount theme's content (dashboard, locations, api, etc.); keep project content (defining mounts replaces default for that target)
 [module]
@@ -9,22 +11,16 @@ languageCode = 'en-tt'
   [[module.mounts]]
     source = "themes/_menus_ttms/content"
     target = "content"
-title = 'Wing it Food Cart'
-baseURL = 'https://wingitfoodcart.ttmenus.com/'
 
 [markup]
-
-[markup.goldmark]
-
-[markup.goldmark.parser]
+  [markup.goldmark]
+    [markup.goldmark.parser]
       attribute = true
-
-[markup.goldmark.renderer]
+    [markup.goldmark.renderer]
       unsafe = true
 
 [outputFormats]
-
-[outputFormats.menuitemsJSON]
+  [outputFormats.menuitemsJSON]
     mediaType = "application/json"
     baseName = "menu-items"
     isPlainText = true
@@ -41,69 +37,78 @@ baseURL = 'https://wingitfoodcart.ttmenus.com/'
   notifyServiceUrl = "https://notify.ttmenus.com"
 
 [params.ads]
-    clientId = "ttms_wingitfoodcart"
-    enabled = true
-    apiUrl = "https://ads.ttmenus.com/api/v1"
+  clientId = "ttms_wingitfoodcart"
+  enabled = true
+  apiUrl = "https://ads.ttmenus.com/api/v1"
 
 [params.auth]
-    enabled = true
-    apiUrl = "https://auth.ttmenus.com/api/v1"
+  enabled = true
+  apiUrl = "https://auth.ttmenus.com/api/v1"
 
 [params.contentManagement]
-    enabled = true
-    apiUrl = "https://cms.ttmenus.com/api"
-    serviceUrl = "https://cms.ttmenus.com"
-    clientId = "ttms_wingitfoodcart"
-    # For local development, use:
-    # apiUrl = "http://localhost:8084/api"
-    # serviceUrl = "http://localhost:8084"
+  enabled = true
+  apiUrl = "https://cms.ttmenus.com/api"
+  serviceUrl = "https://cms.ttmenus.com"
+  clientId = "ttms_wingitfoodcart"
+
+# Menu Image Service - user-submitted images with admin approval
+[params.menuImageService]
+  enabled = true
+  apiUrl = "https://menu-images.ttmenus.com/api/v1"
 
 # Notification Service Configuration
 [params.notifications]
-    enabled = true
-    apiUrl = "https://notify.ttmenus.com/api/v1"
-    websocketUrl = "wss://notify.ttmenus.com/api/v1/ws/connect"
-    serviceUrl = "https://notify.ttmenus.com"
+  enabled = true
+  apiUrl = "https://notify.ttmenus.com/api/v1"
+  websocketUrl = "wss://notify.ttmenus.com/api/v1/ws/connect"
+  serviceUrl = "https://notify.ttmenus.com"
 
 [params.features]
-    payments = false
-    delivery = false
-    notifications = true
+  payments = false
+  delivery = false
+  notifications = true
 
 [params.orderingsystem]
-    # Set to false to disable placing orders (cart still works; user gets message and order is cancelled)
-    enabled = true
-    orderingDisabledMessage = "Ordering is not available for this menu at this time."
-    vat = 0
-    servicecharge = 0
-    hastables = true
-    usephonecall = false
-    whatsapp = 0
-    phone = 0
+  enabled = true
+  orderingDisabledMessage = "Ordering is not available for this menu at this time."
+  vat = 0
+  servicecharge = 0
+  hastables = true
+  usephonecall = false
+  whatsapp = 18683494647
+  phone = 18683494647
+
+[params.orderingmenu]
+  sidesname = "Wings"
+
+[params.posintegration]
+  enabled = true
+  api_url = "{{ env `POS_API_URL` }}"
+  # POS configuration is now per-location in data/locations.yaml
 
 [params.services]
-    analyticsid = 0
-    notifications = true
+  analyticsid = 7
+  notifications = true
 
+# Social profiles
 [params.social]
-    youtube = ""
-    email = ""
-    phone = 0
-    facebook = ""
-    instagram = ""
-    tiktok = ""
+  facebook = "https://www.facebook.com/WingitTT?mibextid=wwXIfr&rdid=8plMkLvvJGxO2bFD&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15zk6rNP5R%2F%3Fmibextid%3DwwXIfr#"
+  instagram = "https://www.instagram.com/wingit.tt/?igsh=MWtsZ3hmbWxheWxwMQ%3D%3D#"
+  tiktok = "https://www.tiktok.com/@wingit.tt?_t=ZM-8uymQKOWMsQ&_r=1"
+  youtube = ""
+  email = ""
+  phone = 18683494647
 
 [privacy]
-
-[privacy.instagram]
-    simple = false
+  [privacy.instagram]
     disable = false
+    simple = false
 
 [taxonomies]
-  ingredient = "ingredients"
-  cookingmethod = "cookingmethods"
   tag = "tags"
   category = "categories"
   subcategory = "subcategories"
   type = "types"
   event = "events"
+  ingredient = "ingredients"
+  cookingmethod = "cookingmethods"
