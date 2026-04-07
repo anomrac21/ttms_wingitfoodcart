@@ -90,7 +90,7 @@ baseURL = 'https://wingitfoodcart.ttmenus.com/'
   # POS configuration is now per-location in data/locations.yaml
 
 [params.services]
-  analyticsid = 7
+  analyticsid = 8
   notifications = true
 
 # Social profiles
