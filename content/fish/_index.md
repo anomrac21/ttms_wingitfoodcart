@@ -1,7 +1,7 @@
 ---
 title: Fried Fish
 weight: 3
-icon: https://ct.ttmenus.com/icons/food/icon-wontons.webp
+icon: https://ct.ttmenus.com/icons/food/icon-fish.webp
 ---
 
 Fried fish.
