@@ -1,12 +1,9 @@
 ---
-title: Wings + Fries
+title: Wings & Reg. Fries
 prices:
   - variable1: Medium
     variable2: "-"
     price: 57
-  - variable1: Large
-    variable2: "-"
-    price: 67
 tags:
   - Wings
   - Chicken
@@ -28,35 +25,50 @@ side_categories:
       - name: Original
         type: Regular
         price: 0
-      - name: Honey BBQ
+      - name: Buffalo
         type: Regular
         price: 0
-      - name: Honey Mustard
-        type: Regular
-        price: 0
-      - name: Lemon Pepper
+      - name: Honey-Mustard
         type: Regular
         price: 0
       - name: Guava BBQ
         type: Regular
         price: 0
-      - name: Sweet + Spicy
+      - name: Sweet & Spicy
         type: Regular
         price: 0
       - name: Tamarind
         type: Regular
         price: 0
+      - name: Lemon
+        type: Regular
+        price: 0
+      - name: Honey BBQ
+        type: Regular
+        price: 0
+      - name: Pepper
+        type: Regular
+        price: 0
+      - name: Jerk
+        type: Regular
+        price: 0
+      - name: Pepper-Lemon
+        type: Regular
+        price: 0
+      - name: Rudeboy Flavors (21+)
+        type: Premium
+        price: 0
   - category_name: extra_sauce
-    display_name: Extra signature sauce
+    display_name: Extra Wing It sauces
     config:
       minimum: 0
       maximum: 1
     items:
-      - name: Extra signature sauce
+      - name: Extra signature sauces
         type: Premium
         price: 5
-  - category_name: fries_upgrade_sweet_cassava
-    display_name: Upgrade fries (sweet potato or cassava)
+  - category_name: upgrade_fries
+    display_name: Upgrade fries
     config:
       minimum: 0
       maximum: 1
@@ -67,15 +79,21 @@ side_categories:
       - name: Cassava Fries
         type: Regular
         price: 10
-  - category_name: fries_upgrade_wedges
-    display_name: Upgrade to wedges
-    config:
-      minimum: 0
-      maximum: 1
-    items:
       - name: Seasoned Wedges
         type: Regular
         price: 8
+      - name: Macaroni Salad
+        type: Regular
+        price: 6
+      - name: Mashed Potato
+        type: Regular
+        price: 6
+      - name: Fresh Salad
+        type: Regular
+        price: 6
+      - name: Cole Slaw
+        type: Regular
+        price: 6
 ---
 
-Wings with fries. Any flavour.
+Wings with regular fries. Any flavour.
