@@ -20,10 +20,10 @@ types:
 weight: 2
 side_categories:
   - category_name: flavours
-    display_name: Choose your flavours (2)
+    display_name: Choose your flavours (1)
     config:
-      minimum: 2
-      maximum: 2
+      minimum: 1
+      maximum: 1
     items:
       - name: Original
         type: Regular
@@ -78,4 +78,4 @@ side_categories:
         price: 8
 ---
 
-Wings with fries. Any two flavours.
+Wings with fries. Any flavour.
