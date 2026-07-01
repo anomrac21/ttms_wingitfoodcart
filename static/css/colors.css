@@ -11,7 +11,7 @@
     --hero-bg-color: var(--neutral-charcoal-dark);
     --hero-bg-image-fg-color: var(--primary-cream);
     --hero-text-color: var(--text-inverse);
-    --contact-info-bg: none;
+    --contact-info-bg: var(--primary-orange);
 
     /*MAIN*/
     --main-bg-color: var(--primary-cream);
@@ -39,8 +39,8 @@
     --selected-text-color3: var(--accent-burgundy);
 
     /*FOOTER*/
-    --footer-bg-color: var(--text-inverse);
-    --footer-text-color: var(--text-dark);
+    --footer-bg-color: var(--primary-orange);
+    --footer-text-color: var(--text-inverse);
     --modal-bg-container-color: var(--overlay-medium);
 
     /*ENHANCED COLOR PALETTE - Complementary & Harmonious */

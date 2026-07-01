@@ -8,29 +8,6 @@ locations:
     phone: 18683494647
     whatsapp: 18683494647
     orderingtables: ["Takeway Only"]
-    pos:
-      loyverse:
-        enabled: true
-        provider: "loyverse"
-        store_id: "{{ env `LOYVERSE_STORE_ID_MUCURAPO` }}"
-        access_token: "{{ env `LOYVERSE_ACCESS_TOKEN_MUCURAPO` }}"
-        webhook_secret: "{{ env `LOYVERSE_WEBHOOK_SECRET` }}"
-        api_url: "{{ env `POS_API_URL` }}"
-        sync_menu: true
-        auto_process_orders: true
-        fallback_to_whatsapp: true
-      odoo:
-        enabled: true
-        provider: "odoo"
-        company_id: "{{ env `ODOO_COMPANY_ID_MUCURAPO` }}"
-        partner_id: "{{ env `ODOO_PARTNER_ID_MUCURAPO` }}"
-        pos_config_id: "{{ env `ODOO_POS_CONFIG_ID_MUCURAPO` }}"
-        user_id: "{{ env `ODOO_USER_ID_MUCURAPO` }}"
-        api_url: "{{ env `ODOO_API_URL_MUCURAPO` }}"
-        database: "{{ env `ODOO_DATABASE_MUCURAPO` }}"
-        sync_menu: true
-        auto_process_orders: true
-        fallback_to_whatsapp: true
     opening_hours:
       mode: Auto
       sun: []
@@ -60,8 +37,8 @@ locations:
         - type: Close
           time: "17:30"
       sat: []
-  - address: Diamond Vale, Diego Martin
-    city: "Chaguanas, Trinidad and Tobago"
+  - address: Diamond Vale, 
+    city: Diego Martin
     island: "Trinidad"
     latlon: [10.499691,-61.408338]
     phone: "8687060349"

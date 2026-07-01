@@ -1,7 +1,9 @@
 ---
 title: Promotions
 weight: 1
-icon: https://ct.ttmenus.com/icons/utilities/advertising.svg
+icon: images/wing-it.jpg
+images:
+    primary: images/wing-it.jpg
 ---
 
 Daily specials and offers.

@@ -11,9 +11,6 @@ baseURL = 'https://wingitfoodcart.ttmenus.com/'
   [[module.mounts]]
     source = "themes/_menus_ttms/content"
     target = "content"
-  [[module.mounts]]
-    source = "../_ttms_clienttools/icons"
-    target = "static/icons"
 
 [markup]
   [markup.goldmark]
@@ -65,6 +62,7 @@ baseURL = 'https://wingitfoodcart.ttmenus.com/'
   apiUrl = "https://notify.ttmenus.com/api/v1"
   websocketUrl = "wss://notify.ttmenus.com/api/v1/ws/connect"
   serviceUrl = "https://notify.ttmenus.com"
+  clientDomain = "wingitfoodcart.ttmenus.com"
 
 [params.features]
   payments = false

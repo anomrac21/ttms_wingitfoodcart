@@ -1,7 +1,9 @@
 ---
 title: Upgrades & Extras
 weight: 6
-icon: https://ct.ttmenus.com/icons/food/icon-sauce.webp
+icon: images/add-ons.webp
+images:
+    primary: images/add-ons.webp
 ---
 
 Add-ons for wings and fries.

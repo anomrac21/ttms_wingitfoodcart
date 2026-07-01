@@ -1,7 +1,9 @@
 ---
 title: Fried Fish
 weight: 3
-icon: https://ct.ttmenus.com/icons/food/icon-fish.webp
+icon: images/fish.webp
+images:
+    primary: images/fish.webp
 ---
 
 Fried fish.

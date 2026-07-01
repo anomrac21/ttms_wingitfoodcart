@@ -1,7 +1,9 @@
 ---
 title: Sides
 weight: 5
-icon: https://ct.ttmenus.com/icons/food/icon-sides.webp
+icon: images/portions.webp
+images:
+    primary: images/portions.webp
 ---
 
 Side portions.
